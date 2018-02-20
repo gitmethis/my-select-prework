@@ -3,9 +3,7 @@ def my_select(collection)
  new_arr = []
  i = 0
  while i < collection.length
-    if yield collection[i] == true
-      new_arr.push(collection[i])  
-    end
+    print yield collection[i]
     i+=1
  end
  new_arr
